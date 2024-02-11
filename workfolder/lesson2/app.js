@@ -8,11 +8,10 @@ createApp({
       age: 25, //Number
       giyim: {
         sapka: true, //Boolean
-        pantolon: 'kot', //String
-        tshirt: false //Boolean
+        pantolon: "kot", //String
+        tshirt: false, //Boolean
       },
-      yetenekler: ['Yazılım', 'Tasarım', 'Yönetim'], //Array
+      yetenekler: ["Yazılım", "Tasarım", "Yönetim"], //Array
     };
   },
 }).mount("#ilk-uygulama");
- 
