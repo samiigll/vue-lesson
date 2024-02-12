@@ -11,18 +11,20 @@
   <body>
     <div id="app">
       <h1>Etkinlikler (Events)</h1>
-      <button v-click="age++">Yaşımı Arttır</button>
-      <button v-click="age--">Yaşımı Azalt</button>
+      <button v-on:click="age++">Yaşımı Arttır</button>
+      <button v-on:click="age--">Yaşımı Azalt</button>
 
       <button v-on:click="ekle">Yaşımı Fonksiyon ile Arttır</button>
       <button v-on:click="cikar">Yaşımı Fonksiyon ile Azalt</button>
 
-      <button v-on:click="ekle(10)">Yaşımı 10 artır</button>
-      <button v-on:click="cikar(10)">Yaşımı 10 azalt</button>
+      <button v-on:click="ekle10(10)">Yaşımı 10 artır</button>
+      <button v-on:click="cikar10(10)">Yaşımı 10 azalt</button>
 
       <p>Yaşım: {{ age }}</p>
 
       <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+
+      <a v-on:click.prevent="tikla" href="https://www.google.com">Google</a>
     </div>
   </body>
   <script src="app.js"></script>
