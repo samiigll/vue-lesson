@@ -9,14 +9,17 @@
   </head>
   <body>
     <div id="app">
-      <h1>Klavye Etkinlikleri</h1>
-      <label for="name">Adınız:</label>
-      <input type="text" v-on:keyup.enter="updateName" />
+      <h1>Şart İşlemleri</h1>
+      <button v-on:click="error = !error">Hata Göster</button>
+      <button v-on:click="success = !success">Başarılı Göster</button>
+<!-- 
+      <p v-if="error">İşlem hata verdi</p>
+      <p v-else-if="success">İşlem Başarılı</p> -->
 
-      <label for="surname">Soyadınız:</label>
-      <input type="text" v-on:keyup="updateSurname" />
-      
-      
+      <p v-show="error">Hata Göster</p>
+      <p v-show="success">Başarılı Göster</p>
+
+    </div>
   </body>
   <script src="app.js"></script>
 </html>

@@ -9,16 +9,16 @@
   </head>
   <body>
     <div id="app">
-      <h1>Çift Yönde Veri İşleme</h1>
-      <label for="name">Adınız:</label>
-      <input type="text"v-model="name"/>
-      <p>{{ name }}</p>
-
-      <label for="age">Yaşınız:</label>
-      <input type="text"v-model="age"/>
-      <p>{{ age }}</p>
-
+      <h1>İşlenmiş Özellikler</h1>
+      <button v-on:click="a++">A'ya 1 Ekle</button> 
+      <button v-on:click="b++">B'ya 1 Ekle</button> 
       
+      <p>A: {{ a }}</p>
+      <p>B: {{ b }}</p>
+
+      <p>Yaş + A = {{ aYaEkle }}</p>
+      <p>Yaş + B = {{ bYeEkle }}</p>
+
   </body>
   <script src="app.js"></script>
 </html>

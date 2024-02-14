@@ -2,12 +2,15 @@ const { createApp } = Vue;
 
 createApp({
   data() {
-    return {
-      name: "",
-      age:""
-    };
+    return {};
   },
   methods: {
+    updateName: function () {
+      console.log("Name updated");
+    },
 
+    updateSurname: function () {
+      console.log("Name updated");
+    },
   },
 }).mount("#app");
