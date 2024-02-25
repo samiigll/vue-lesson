@@ -1,5 +1,5 @@
 <!-- //!Ders 19 - İç İçe Bileşenler - Nested Componenets -->
-<!-- //!Ders 20 - Bileşene Özel CSS -  -->
+<!-- //!Ders 20 - Bileşene Özel CSS  -->
 
 <template>
   <div>
